@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> 
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+            <path d="M 9.300781 14 C 8 14 7 15 7 16.402344 C 7 17 7.199219 17.199219 7.300781 17.402344 C 7.578125 17.90625 8.859375 20 8.859375 20 C 8.925781 20.097656 8.9375 20.167969 8.957031 20.300781 C 9.058594 20.699219 8.757813 21 8.359375 21 L 2 21 L 2 24 L 10.800781 24 C 12.101563 24 13.199219 23 13.199219 21.597656 C 13.199219 21 13 20.800781 12.902344 20.597656 L 11.234375 18 C 11.175781 17.925781 11.132813 17.800781 11.132813 17.699219 C 11.132813 17.300781 11.433594 17 11.832031 17 L 16 17 L 16 24 L 20 24 L 20 17 L 24 17 L 24 14 Z M 26.300781 14 L 23.078125 24 L 26.300781 24 L 27 22 L 30.152344 22 L 30.847656 24 L 34 24 L 30.667969 14 Z M 35 14 L 35 24 L 38 24 L 38 20.890625 C 38.65625 21.515625 40.21875 23 41 23.699219 C 41.097656 23.800781 41.398438 24 41.796875 24 L 48 24 L 48 21 L 43.597656 21 C 43.371094 21 43.210938 20.933594 43.078125 20.839844 C 43.011719 20.777344 42.96875 20.738281 42.917969 20.691406 C 44.140625 20.144531 45 18.921875 45 17.5 C 45 15.574219 43.425781 14 41.5 14 Z M 38 17 L 41 17 C 41.277344 17 41.5 17.222656 41.5 17.5 C 41.5 17.777344 41.277344 18 41 18 L 38 18 Z M 28.566406 17.402344 L 29.574219 20 L 27.699219 20 Z M 2.398438 27 L 5.734375 37 L 8.101563 37 L 9.671875 32.449219 L 11.246094 37 L 13.597656 37 L 16.933594 27 L 13 27 L 12.03125 29.902344 L 11.066406 27 L 7.601563 27 L 6.546875 29.9375 L 5.566406 27 Z M 19.300781 27 L 16.078125 37 L 19.300781 37 L 20 35 L 23.152344 35 L 23.847656 37 L 27 37 L 23.667969 27 Z M 28 27 L 28 37 L 31 37 L 31 33.886719 C 31.65625 34.507813 33.222656 36 34 36.699219 C 34.101563 36.800781 34.402344 37 34.800781 37 L 44.097656 37 C 45.398438 37 46.5 36.097656 46.5 34.597656 C 46.5 34 46.300781 33.800781 46.199219 33.597656 L 44.53125 31.097656 C 44.5 31.03125 44.433594 30.902344 44.433594 30.800781 C 44.433594 30.402344 44.730469 30 45.03125 30 L 48 30 L 48 27 L 42.300781 27 C 41 27 39.902344 28.101563 39.902344 29.5 C 39.902344 30.101563 40.097656 30.300781 40.199219 30.5 C 40.480469 30.882813 42 33 42 33 C 42.042969 33.101563 42.097656 33.199219 42.097656 33.300781 C 42.097656 33.699219 41.800781 34 41.5 34 L 36.597656 34 C 36.425781 34 36.292969 33.957031 36.179688 33.898438 C 36.09375 33.804688 36.023438 33.730469 35.964844 33.667969 C 37.160156 33.109375 38 31.902344 38 30.5 C 38 28.574219 36.425781 27 34.5 27 Z M 31 30 L 34 30 C 34.277344 30 34.5 30.222656 34.5 30.5 C 34.5 30.777344 34.277344 31 34 31 L 31 31 Z M 21.566406 30.402344 L 22.574219 33 L 20.699219 33 Z"></path>
+            </svg> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+            <form class="d-flex" role="search justify-content-center">
+              
+              <button type="button" class="btn btn-dark me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create New Post
+              </button>
+              <div class="btn-group justify-content-center">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear bg-grey" viewBox="0 0 16 16">
+                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                  </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button">Profile</button></li>
+                  <li><button class="dropdown-item" type="button">Accesibility</button></li>
+                  <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+    </nav>
+      
+    <nav>
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+            <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5zM1.5 1a.5.5 0 0 0-.5.5V5h4V1zM5 6H1v4h4zm1 4h4V6H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5zm1 0v4h4v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11zm0-1h4V6h-4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11zm-1 0V1H6v4z"/>
+          </svg>
+        </button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+          </svg></button>
+        </div>
+    </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...
+          <div class="container mt-3" justify-content-between aling-items-center>
+              <div class="row d-flex">
+                <div class="col-md-4 col-sm-6 ">
+                  <img src="https://i.pinimg.com/736x/9b/1f/8b/9b1f8b3272359776a1b86481a12ab1cb.jpg" class="col-12 mb-3" alt="...">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <img src="https://i.pinimg.com/736x/eb/64/8d/eb648db95498ee1e37c1f181743a781b.jpg" class="col-12 mb-3" alt="...">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <img src="https://i.pinimg.com/736x/b8/60/74/b860748df604795874f67ed3e9a759e6.jpg" class="col-12 mb-3" alt="...">
+                </div>
+              </div>
+              <div class="row d-flex">
+                <div class="col-md-4 col-sm-6">
+                  <img src="https://i.pinimg.com/736x/ce/05/c4/ce05c42f7cc28df7907fbd34827605d8.jpg" class="col-12 mb-3" alt="..." >
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <img src="https://i.pinimg.com/736x/aa/f4/34/aaf4344274b651ecc42147b6572dcdb2.jpg" class="col-12 mb-3" alt="...">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <img src="https://i.pinimg.com/736x/93/30/c9/9330c9f642cf159cb997e992dc148f9b.jpg" class="col-12 mb-3" alt="...">
+                </div>
+              </div> 
+              <div class="row d-flex">
+                <div class="col-md-4 col-sm-6">
+                  <img src="https://i.pinimg.com/736x/64/25/e1/6425e126994d7315c4c1ec35f33a90e4.jpg" class="col-12 mb-3" alt="...">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <img src="https://i.pinimg.com/736x/3f/ef/49/3fef49d4fbcaa80812225ebaae08db90.jpg" class="col-12 mb-3" alt="...">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <img src="https://i.pinimg.com/736x/b5/8c/4f/b58c4fa26cf9a58003b0de924126f137.jpg" class="col-12 mb-3" alt="...">
+                </div>
+              </div> 
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+          <div class="d-flex justify-content-center align-items-center mb-3 mt-3">
+            <div class="card" style="width: 28rem;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3> Amenaza Fantasma</h3>
+                  <span>1/9</span>
+                </div>
+                <div>
+                  <img src="https://i.pinimg.com/736x/9b/1f/8b/9b1f8b3272359776a1b86481a12ab1cb.jpg" class="card-img-top" alt="...">
+                </div>
+                
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <div class="card" style="width: 28rem;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Ataque de los clones</h3>
+                  <span>2/9</span>
+                </div>
+                <div>
+                  <img src="https://i.pinimg.com/736x/eb/64/8d/eb648db95498ee1e37c1f181743a781b.jpg" class="card-img-top" alt="...">
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <div class="card" style="width: 28rem;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>La Venganza de los Sith</h3>
+                  <span>3/9</span>
+                </div>
+                <div>
+                  <img src="https://i.pinimg.com/736x/b8/60/74/b860748df604795874f67ed3e9a759e6.jpg" class="card-img-top" alt="...">
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <div class="card" style="width: 28rem;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Una nueva Esperanza</h3>
+                  <span>4/9</span>
+                </div>
+                <div>
+                  <img src="https://i.pinimg.com/736x/ce/05/c4/ce05c42f7cc28df7907fbd34827605d8.jpg" class="card-img-top" alt="...">
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Caption:
+      </div>
+      <div class="container">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Add the caption of your post here">
+          <div class="mt-3">
+            <button type="button" class="btn btn-secondary btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-secondary btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-dark">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
